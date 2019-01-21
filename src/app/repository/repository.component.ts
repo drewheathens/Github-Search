@@ -10,6 +10,6 @@ export class RepositoryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
 
+  }
 }

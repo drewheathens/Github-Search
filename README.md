@@ -10,7 +10,7 @@ An app that allows user to input Github username and click search, The expected 
 
 # **INSTALLATION**
 
-clone this repository to a location in your computer, from there you should be able to run ng serve command in terminal at any time. the local server runs it on your web browser. or visit
+clone this repository to a location in your computer, from there you should be able to run ng serve command in terminal at any time. the local server runs it on your web browser. or visit https://drewheathens.github.io/Github-Search/
 
 # **USAGE**
 

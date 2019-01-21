@@ -1,27 +1,49 @@
-# GithubSearch
+# **Github-Search**
+An app that allows user to input Github username and click search, The expected OUTPUT is the searched user account with it's repositories.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+# **BDD**
 
-## Development server
+| *BEHAVIOUR*        |  *INPUT*       |  *OUTPUT*      |
+|-----------------|-------------|-------------|
+|allow user input github username|github username|user and repositories|
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# **INSTALLATION**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+clone this repository to a location in your computer, from there you should be able to run ng serve command in terminal at any time. the local server runs it on your web browser. or visit https://drewheathens.github.io/quotes/
 
-## Build
+# **USAGE**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+All that's required of the user is to input quote, author name press add button, your quote and details will be displayed.
 
-## Running unit tests
+# **TECHNOLOGIES USED**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+-typescript
 
-## Running end-to-end tests
+-css
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+-html
 
-## Further help
+-Angular
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+# **PROJECT STATUS**
+
+The project is still under development.
+
+# **CONTRIBUTION**
+
+When contributing to this repository, please first discuss the change you wish to make via issue.
+
+# **AUTHORS**
+
+_EVANS MUDAVADI_.
+
+# **LICENSING**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

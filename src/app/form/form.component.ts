@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../repository/http.service'
 
 @Component({
   selector: 'app-form',
@@ -6,8 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+  profile: any[];
+  repository: any[];
+  username: string;
 
-  constructor() { }
+  constructor(private httpService: HttpService) { }
+
+  findProfile() {
+    this.httpService.updateProfile(this.username);
+    this.httpService.getProfileRepos().subscribe(repository => {
+      console.log(repository);
+      this.repository = repository;
+    })
+
+
+
+  }
 
   ngOnInit() {
   }

@@ -1,38 +1,39 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
-import { RouterModule, Routes } from '@angular/router';
-import { FormsService } from './form/Forms.service';
-
-
-import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
-const routes: Routes = [
-  { path: "form", component: FormComponent },
-  // { path: "search", component: SearchComponent }
+import { GitUsersComponent } from './git-users/git-users.component';
+import { gitapiService } from './git-api.service';
+import { RepositoryComponent } from './repository/repository.component';
+
+import { StrikethroughDirective } from './strikethrough.directive';
+import { timeellapsedPipe } from './time-ellapsed-pipe.pipe';
+
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent,
-  ],
+    
+    RepositoryComponent,
+    timeellapsedPipe,
+    StrikethroughDirective,
+    GitUsersComponent,
 
+
+  ],
   imports: [
-    AppRoutingModule
-    BrowserModule,
-    FormsModule,
     HttpClientModule,
-    NgProgressModule,
-    NgProgressHttpModule,
-
+    BrowserModule,
+    FormsModule
 
   ],
-
-  providers: [],
+  providers: [gitapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

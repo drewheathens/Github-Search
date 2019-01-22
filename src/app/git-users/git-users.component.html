@@ -1,0 +1,18 @@
+<form #searchForm="ngForm">
+  <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search Username"  name="userName" [(ngModel)]="userName">
+      <button type="submit" name="button" (click)="findUsers()">SEARCH me!</button>
+    </div>
+</form>
+<div class="container">
+  <div class="card">
+  <div class="card-header display-4" style="text-align:center; color:#0d47a1"> {{users.login}}'see repositories</div>
+  <div class="card-body" *ngFor="let repository of repositorys; let i = index">
+    <ul>
+      <li>{{repository.name}}
+          <a href="{{repository.html_url}}" target="_blank" class="btn btn-sm btn-outline-primary float-right"> View on Github </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>

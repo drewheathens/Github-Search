@@ -14,7 +14,7 @@ clone this repository to a location in your computer, from there you should be a
 
 # **USAGE**
 
-All that's required of the user is to input quote, author name press add button, your quote and details will be displayed.
+All that's required of user is input name then press search me button, your profile and repositories will be displayed.
 
 # **TECHNOLOGIES USED**
 

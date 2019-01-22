@@ -1,16 +1,23 @@
 # **Github-Search**
+
 An app that allows user to input Github username and click search, The expected OUTPUT is the searched user account with it's repositories.
 
 # **BDD**
 
-| *BEHAVIOUR*        |  *INPUT*       |  *OUTPUT*      |
-|-----------------|-------------|-------------|
-|allow user input github username| Github username| User and repositories|
-
+| _BEHAVIOUR_                      | _INPUT_         | _OUTPUT_              |
+| -------------------------------- | --------------- | --------------------- |
+| allow user input github username | Github username | User and repositories |
 
 # **INSTALLATION**
 
-clone this repository to a location in your computer, from there you should be able to run ng serve command in terminal at any time. the local server runs it on your web browser. or visit https://drewheathens.github.io/Github-Search/
+ \-Install Angular-cli & node-js.
+
+ \-Go-to  <https://github.com/drewheathens/Github-Search>.
+  \-To the right side click clone or download button.
+ copy the link.
+  \-Go to terminal, type git clone folowed by the copied link.
+
+From there you should be able to run ng serve command in terminal at any time. the local server(4200) runs it on your web browser. or visit <https://drewheathens.github.io/Github-Search/>
 
 # **USAGE**
 
@@ -18,15 +25,13 @@ All that's required of user is input name then press search me button, your prof
 
 # **TECHNOLOGIES USED**
 
--typescript
+\-typescript
 
--css
+\-css
 
--html
+\-html
 
--Angular
-
-
+\-Angular
 
 # **PROJECT STATUS**
 

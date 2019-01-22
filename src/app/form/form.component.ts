@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from '../repository/http.service'
+import { Repository } from '../repository'
+import { User } from '../user'
+import 'rxjs/add/operator/map';
+import { FormsService } from './form/Forms.service';
+// import {FormsModuleService} from '../forms.service'
+
 
 @Component({
   selector: 'app-form',
@@ -11,20 +16,28 @@ export class FormComponent implements OnInit {
   repository: any[];
   username: string;
 
-  constructor(private httpService: HttpService) { }
-
-  findProfile() {
-    this.httpService.updateProfile(this.username);
-    this.httpService.getProfileRepos().subscribe(repository => {
-      console.log(repository);
-      this.repository = repository;
-    })
-
-
-
+  constructor(private FormsService: FormsService) {
+    console.log(user);
+    this.user = user;
   }
+this.FormsService.getRepository().subscribe(repository => {
 
-  ngOnInit() {
-  }
+  this.repository = repository;
+})
+}
 
+ngOnInit() {
+}
+User(){
+  this.FormsService.updateUser(this.username);
+  this.FormsService.getUser().subscribe(user => {
+    this.user = user;
+  })
+
+  this.FormsService.getRepository().subscribe(repository => {
+
+    this.repository = repository;
+  })
+
+}
 }

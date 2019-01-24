@@ -9,7 +9,7 @@ import { environment } from '../environments/environment'
 export class gitapiService {
 
   private userName: string;
-  private apiKey: string = environment.apiUrl;
+  private apiKey = '7ee513f16f753f3726655133c2e4164ff84d4ee0';
   constructor(public http: HttpClient) {
     console.log('service is now ready');
     this.userName = 'drewheathens'

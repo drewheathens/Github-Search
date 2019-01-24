@@ -3,5 +3,5 @@ import { appInitializerFactory } from "@angular/platform-browser/src/browser/ser
 
 export const environment = {
   production: false,
-  apiUrl:"42da8b4f4c5a81e11fd3ac0569ff619784307d4d"
+  apiUrl:"ad3838bd6c7434992e27d4260a5e13e343ed3db4"
 };
